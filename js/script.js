@@ -53,6 +53,11 @@ currencyFieldset.addEventListener('input', evt => {
     .catch(err => console.error(err));
 });
 
+inputAmount.addEventListener('change', () => {
+  getCurrencyData(currencyFrom.value, currencyTo.value)
+    .catch(err => console.error(err));
+});
+
 convertBtn.addEventListener('click', () => {
   getCurrencyData(currencyFrom.value, currencyTo.value)
     .catch(err => console.error(err));
