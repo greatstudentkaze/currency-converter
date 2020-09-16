@@ -9,40 +9,44 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="container">
+  <main class="main container">
     <section class="converter">
-      <h2 class="converter__title">Конвертер валют (USD / EUR / RUB)</h2>
-      <div class="converter__wrap js-currency">
+      <h2 class="converter__title">Конвертер валют (USD&nbsp;/&nbsp;EUR&nbsp;/&nbsp;RUB)</h2>
+      <div class="converter__columns js-currency">
         <fieldset class="converter__currency">
           <legend class="converter__hint">У меня есть</legend>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-from" value="USD" checked> $ (USD)
+            <input class="converter__radio" type="radio" name="currency-from" value="USD" checked> $&nbsp;(USD)
           </label>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-from" value="EUR"> € (EUR)
+            <input class="converter__radio" type="radio" name="currency-from" value="EUR"> €&nbsp;(EUR)
           </label>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-from" value="RUB"> ₽ (RUB)
+            <input class="converter__radio" type="radio" name="currency-from" value="RUB"> ₽&nbsp;(RUB)
           </label>
         </fieldset>
         <fieldset class="converter__currency">
           <legend class="converter__hint">Я хочу</legend>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-to" value="USD"> $ (USD)
+            <input class="converter__radio" type="radio" name="currency-to" value="USD"> $&nbsp;(USD)
           </label>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-to" value="EUR"> € (EUR)
+            <input class="converter__radio" type="radio" name="currency-to" value="EUR"> €&nbsp;(EUR)
           </label>
           <label class="converter__label">
-            <input class="converter__radio" type="radio" name="currency-to" value="RUB" checked> ₽ (RUB)
+            <input class="converter__radio" type="radio" name="currency-to" value="RUB" checked> ₽&nbsp;(RUB)
           </label>
         </fieldset>
       </div>
-      <div class="converter__wrap">
-        <input class="converter__input" id="input-amount" type="number" name="input-amount" value="1" placeholder="100">
-        <label class="converter__label" for="input-amount">Доллар США (USD)</label>
-        <input class="converter__input" id="output-amount" type="number" name="output-amount" placeholder="..." disabled>
-        <label class="converter__label" for="output-amount">Российский рубль (RUB)</label>
+      <div class="converter__columns converter__columns--large-margin">
+        <div class="converter__wrap">
+          <input class="converter__input" id="input-amount" type="number" name="input-amount" value="1" placeholder="100">
+          <label class="converter__label converter__label--text-right" for="input-amount">Доллар США (USD)</label>
+        </div>
+        <div class="converter__wrap">
+          <input class="converter__input" id="output-amount" type="number" name="output-amount" placeholder="..." disabled>
+          <label class="converter__label converter__label--text-right" for="output-amount">Российский рубль (RUB)</label>
+        </div>
       </div>
       <button class="converter__button js-convert" type="button">Конвертировать</button>
     </section>
